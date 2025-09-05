@@ -4,7 +4,7 @@ let buttons = document.querySelectorAll('.btn');
 let form = document.querySelector('form');
 let tipamount = document.querySelector('.tipamount');
 let tipperperson = document.querySelector('.tipperperson');
-let errorDiv = document.querySelector('.error'); // error div
+let errorDiv = document.querySelector('.error');
 let reset=document.querySelector('.reset')
 
 let tip = 0;
@@ -17,9 +17,9 @@ form.addEventListener('submit', (e) => {
 
 function calculate() {
   if (billValue > 0 && numberofppl > 0 && tip > 0) {
-    let totalTip = billValue * (tip / 100);          // total tip
-    let tipEach = totalTip / numberofppl;            // tip per person
-    let totalPerPerson = (billValue + totalTip) / numberofppl; // total with tip
+    let totalTip = billValue * (tip / 100);          
+    let tipEach = totalTip / numberofppl;            
+    let totalPerPerson = (billValue + totalTip) / numberofppl; 
 
     tipamount.textContent = `$${tipEach.toFixed(2)}`;      
     tipperperson.textContent = `$${totalPerPerson.toFixed(2)}`;
@@ -40,11 +40,11 @@ peopleinput.addEventListener('input', () => {
   numberofppl = parseInt(peopleinput.value) || 0;
 
   if (numberofppl === 0) {
-    peopleinput.style.border = "2px solid red";   // red border
-    errorDiv.style.visibility = "visible";        // show error
+    peopleinput.style.border = "2px solid red";  
+    errorDiv.style.visibility = "visible";        
   } else {
-    peopleinput.style.border = "none";            // reset border
-    errorDiv.style.visibility = "hidden";         // hide error
+    peopleinput.style.border = "none";            
+    errorDiv.style.visibility = "hidden";         
     calculate();
   }
 });
