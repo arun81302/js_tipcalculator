@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="main" role="main">
+      <p class="split">SPLI <BR>TTER</BR></p>
+      <div class="article" role="article">
+        <div class="left">
+          <div class="lcontainer">
+            <form action="">
+              <label for="bill"  class="billl">BILL</label><br />
+              <div class="bill">
+                <div class="dollardiv">
+                  <img class="dollar" src="images/icon-dollar.svg" alt="icon" />
+                </div>
+                
+                <input type="text" name="bill" id="bill" placeholder="0"/>
+              </div>
+              <p class="tip">Select Tip %</p>
+              <div class="btns">
+                <div class="upbtns">
+                  <button class="btn">5%</button>
+                <button class="btn">10%</button>
+                <button class="btn">15%</button>
+                </div>
+                <div class="downbtns">
+                  <button class="btn">25%</button>
+                <button class="btn">50%</button>
+                <input type="text" class="custom" placeholder="Custom">
+                </div>
+              </div>
+              <p class="ppl">Number of People</p>
+              <span class="error">Can't be zero</span>
+              <div class="people">
+                
+                <div class="pplicondiv">
+                  <img class="pplicon" src="images/icon-person.svg" alt="person" />
+                </div>
+                
+              <input type="text" placeholder="0" id="peopleinput" />
+              </div>
+              
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <div class="rcontainer">
+            <div class="first">
+              <div class="fleft">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+              </div>
+              <div class="fright"><h1 class="tipamount">$0.00</h1></div>
+            </div>
+            <div class="second">
+              <div class="fleft">
+                <p>Total</p>
+                <span>/ person</span>
+              </div>
+              <div class="fright"><h1 class="tipperperson">$0.00</h1></div>
+            </div>
+            <button class="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

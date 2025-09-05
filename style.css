@@ -1,0 +1,302 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Space Mono", monospace;
+}
+html, body, .main{
+      height: 100%;
+      width: 100%;
+      
+}
+body{
+      background-color: hsl(174, 41%, 82%);
+}
+.split{
+      font-size: 1.7rem;
+      letter-spacing: 7px;
+      margin-bottom: 3.5rem;
+}
+.main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+}
+
+.article{
+      height: 50%;
+      width: 53%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      background-color: white;
+      align-items: stretch;
+}
+
+.left, .right{
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.rcontainer{
+      display: flex;
+      flex-direction: column;
+      background-color: hsl(183, 100%, 15%);
+      border-radius: 10px;
+}
+.first{
+      margin-top: 1em;
+}
+.fleft{
+      margin-left: 1em;
+}
+.fright{
+      margin-right: 1em;
+}
+.fright h1{
+      color: hsl(175, 61%, 56%);
+}
+.fleft p{
+      font-weight: bold;
+      color: white;
+}
+.fleft span{
+      color: aquamarine;
+}
+.second{
+      margin-top: 1em;
+}
+
+ button{
+      width: 85%;
+      height: 11%;
+      margin: 0 auto;
+      border: none;
+      text-align: center;
+      margin-top: 10em;
+      border-radius: 2px;
+      background-color: hsl(183, 100%, 15%);
+      /* background-color: hsl(175, 61%, 56%); */
+      cursor: pointer;
+ }
+ button:hover{
+      background-color: hsl(175, 61%, 56%);
+ }
+.first, .second{
+      display: flex;
+      justify-content: space-between;
+}
+.rcontainer{
+      height: 90%;
+      width: 92%;
+      border: 1px solid black;
+}
+.lcontainer{
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+}
+
+.bill{
+      display: grid;
+      width: 100%;
+      grid-template-columns:0.1fr 1fr;
+      height: 2.5rem;
+      background-color: hsl(189, 47%, 97%);
+      border-radius: 5px;  
+
+}
+.bill input{
+      width: 100%;
+      height: 100%;
+      background-color: hsl(189, 47%, 97%);
+      border: none;
+      text-align: right;
+      padding-right: 0.5em;
+      font-size: 24px;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      border: none;
+      outline: none;
+}
+.dollardiv{
+      height: 100%;
+      display: flex;
+      background-color: hsl(189, 47%, 97%);
+}
+.dollar{
+      
+      width: 35%;
+      margin: auto;
+      border: none;
+}
+.tip{
+      margin-top: 1em;
+}
+.btns{
+      margin-top: 0.5em;
+      width: 100%;
+      height: 32%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+}
+.btns button{
+      margin: 0;
+      height: 100%;
+      width: 26%;
+      font-size: 1.5rem;
+      background-color: hsl(183, 100%, 15%) ;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+}
+.btns button:hover{
+      background-color: hsl(175, 61%, 56%);
+}
+
+.upbtns, .downbtns{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+
+.custom{
+      border: none;
+      outline: none;
+      width: 26%;
+      height: 100%;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: hsl(189, 47%, 97%);
+      text-align: right;
+      padding-right: 0.3em;
+      /* padding: auto;
+      padding-left: au; */
+}
+.ppl{
+      margin-top: 1.5em;
+      margin-bottom: -0.5em;
+}
+.error{
+      color: red;
+      position:relative;
+      left: 18rem;
+      top: -0.5rem;
+      font-size: 0.8rem;
+      visibility: hidden;
+}
+.people{
+      /* border: 1px solid black; */
+      display: grid;
+      width: 100%;
+      grid-template-columns:0.1fr 1fr;
+      height: 2.5rem;
+      background-color: hsl(189, 47%, 97%);
+      border-radius: 5px;     
+}
+.pplicondiv{
+      height: 100%;
+      background-color:  hsl(189, 47%, 97%);
+      display: flex;
+      
+}
+.pplicon{
+      height: 35%;
+      margin: auto;
+      border: none;
+}
+.people input{
+      width: 100%;
+      height: 100%;
+      background-color: hsl(189, 47%, 97%);
+      border: none;
+      text-align: right;
+      padding-right: 0.5em;
+      font-size: 24px;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      border: none;
+      outline: none;
+}
+@media screen and (min-width:450px) and (max-width:850px) {
+      
+      .article{
+            width: 90%;
+            height: 30%;
+      }
+}
+@media screen and (max-width:440px){
+      html, body{
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+      }
+      .main{
+            min-height: 100vh;
+            
+            width: 100%;
+      }
+      .split{
+            margin-top: -11rem;
+            width: 8rem;
+            font-size: 1.3rem;
+
+            letter-spacing: 1.5rem;
+      }
+      .article, .lcontainer{
+            background-color: white;
+      }
+      .article{
+            width: 100%;
+            display: grid;
+            margin-top: -1.5rem;
+            grid-template-columns: 1fr;
+            border-radius: 10px;
+            background-color: white;
+      }
+      
+      .rcontainer, .lcontainer{
+            width: 100%;
+            height: 95%;
+      }
+      .lcontainer{
+            width: 90%;
+      }
+      .billl, .tip, .ppl{
+            font-size: 1rem;
+            color: grey;
+      }
+      .bill{
+            margin-top: 0.2em;
+      }
+      .rcontainer{
+            margin-top: 3.5em;
+            height: 90%;
+      }
+      .rcontainer button{
+            margin-top: 1.5em;
+            height: 20%;
+      }
+      .error{
+            position: relative;
+            left: 16rem;
+            top: 0.1rem;
+      }
+
+      .custom{
+            font-size: 1rem;
+      }
+    }
+    
+
+
+
